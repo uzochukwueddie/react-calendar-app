@@ -1,38 +1,162 @@
-.App {
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  padding-bottom: 60px;
+  overflow-x: hidden; 
+  background: #323b43;
+}
+
+.wrapper {
+  padding: 0px 12px 0 12px; 
+}
+
+.card {
+  border: none;
+}
+
+.card-body {
+  background: #36404a;
+  color: #ced4da;
+}
+
+.external-event {
+  cursor: move;
+  margin: 10px 0;
+  padding: 8px 10px;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fc td {
+  border-color: #495561;
+}
+
+.fc-today {
+  background: #495561 !important;
+}
+
+.fc-button {
+  background: #323b44;
+  border: none;
+  color: #dee2e6;
+  text-transform: capitalize;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 3px;
+  margin: 0 3px;
+  padding: 6px 12px;
+  height: auto;
+}
+
+.fc-day-header {
+  color: #a8b5c3;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.fc-button-active {
+  background-color: #3bafda !important;
+  color: #fff;
+  text-shadow: none;
+}
+
+.fc-today-button {
+  background-color: #3bafda !important;
+}
+
+.fc-toolbar h2 {
+  font-size: 20px;
+}
+
+.fc-icon {
+  font-size: 1em !important;
+}
+
+.fc-event {
+  border-radius: 2px;
+  border: none;
+  cursor: move;
+  font-size: 0.8125rem;
+  margin: 5px 7px;
+  padding: 5px 5px;
+  text-align: center; }
+
+.fc th.fc-widget-header {
+  background: #323b44;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.fc-day-number {
+  float: right;
+  height: 20px;
+  width: 20px;
   text-align: center;
+  line-height: 20px;
+  background-color: #323b44;
+  border-radius: 50%;
+  margin: 5px;
+  font-size: 12px;
+  color: #a8b5c3;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.fc th.fc-widget-header {
+  border: 1px solid #495561;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.fc-axis {
+  color: #a8b5c3;
+  font-size: 14px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.modal-content {
+  background: #323b43;
+}
+
+.close {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.form-control {
+  width: 100%;
+  height: calc(1.5em + .9rem + 2px);
+  padding: .45rem .9rem;
+  font-size: .9rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #414d59;
+  background-clip: padding-box;
+  border: 1px solid #495561;
+  border-radius: .2rem;
+  outline: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-control:focus {
+  background-color: #414d59;
+  color: #fff;
+  border-color: #414d59;
 }
+
+.save, .save:hover, .save:focus {
+  background: #4aa1f3;
+  border: 1px solid #4aa1f3;
+}
+
+.save:disabled  {
+  background: #414d59;
+  border: 1px solid #414d59;
+}
+
+.modal-header, .modal-footer {
+  border: 1px solid #414d59;
+}
+
